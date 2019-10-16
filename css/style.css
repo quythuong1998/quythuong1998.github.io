@@ -48,7 +48,9 @@ body {
 .q-home-section .q-home-text .text {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
+
 .q-home-section .q-home-text h1 {
   font-size: 60px;
   color: #000000;
@@ -89,6 +91,9 @@ body {
     max-width: 50%;
     padding-left: 45px;
     padding-right: 3em;
+  }
+  .q-home-section .q-home-text h2 {
+    color: rgb(0, 0, 0);
   }
 }
 @media (min-width: 768px) {
@@ -180,7 +185,14 @@ body {
   background-size: cover;
   background-position: center center;
 }
-
+@media (max-width: 767.98px) {
+  .q-about .img-about .overlay {
+    visibility: hidden;
+  }
+  .img {
+    visibility: hidden;
+  }
+}
 .q-counter .text {
   display: inline-block;
   box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.2);
@@ -234,6 +246,16 @@ body {
 @media (max-width: 767.98px) {
   .heading-section h2 {
     font-size: 28px;
+  }
+  .services .media-body {
+    text-align: center;
+  }
+  .services .icon {
+    text-align: center;
+  }
+  .finished-projects {
+    display: flex;
+    justify-content: center;
   }
 }
 
