@@ -1,0 +1,131 @@
+.q-home-section {
+  background-repeat: no-repeat;
+  height: 750px;
+  position: relative;
+}
+
+.q-home-section .q-home-text {
+  height: 750px;
+}
+
+.q-home-section .q-home-text .one-third {
+  width: 80%;
+  position: relative;
+  height: 650px;
+  z-index: -1;
+  box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.15);
+}
+
+.q-home-section .q-home-text .one-third .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  opacity: 0;
+}
+
+.q-home-section .q-home-text .subheading {
+  color: #000000;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #0075f6;
+}
+.q-home-section .q-home-text .text {
+  position: relative;
+  z-index: 1;
+}
+.q-home-section .q-home-text h1 {
+  font-size: 60px;
+  color: #000000;
+  line-height: 1.2;
+  font-weight: 800;
+}
+.q-home-section .q-home-text h1 span {
+  font-weight: 800;
+  color: #0075f6;
+}
+
+.q-home-section .q-home-text h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.q-home-section .q-home-text .btn-custom {
+  border: 1px solid #0075f6;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.q-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (min-width: 992px) {
+  .q-home-section .q-home-text .one-forth .text {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    max-width: 50%;
+    padding-left: 45px;
+    padding-right: 3em;
+  }
+}
+@media (min-width: 768px) {
+  .q-home-section .q-home-text .one-forth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .q-home-section .q-home-text h1 {
+    color: #fff;
+    font-size: 50px;
+  }
+  .q-home-section .q-home-text h2 {
+    color: #fff;
+  }
+  .q-home-section .q-home-text .one-forth {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 1em;
+  }
+  .q-home-section .q-home-text .one-third {
+    width: 100%;
+    z-index: 0;
+  }
+  .q-home-section .q-home-text .one-third .overlay {
+    opacity: 0.3;
+  }
+  .q-home-section .q-home-text .one-third:after {
+    opacity: 0;
+  }
+  .text {
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .q-home-section .q-home-text h1 {
+    font-size: 40px;
+  }
+}
